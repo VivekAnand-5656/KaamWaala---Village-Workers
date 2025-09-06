@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.navlink li {
+    @apply py-1 px-2 cursor-pointer transition-all ease-in-out duration-500 rounded-[0.2rem];
+}
+
+.navlink li:hover {
+    @apply bg-[#1EA1CF] text-white;
+}
+
+/* ----- Hero ----- */
+ 
+.tst{
+    animation: tt 1s ease-out forwards ;
+}
+@keyframes tt {
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.pics img {
+    animation: anim 1s ease-out forwards ;
+    border-radius:2rem 6rem ;
+    @apply w-[80%] h-[90%]  transition-all ease-in-out duration-300 cursor-pointer;
+}
+@keyframes anim {
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+ 
+/* Features */
+.feature {
+    @apply  rounded-[1rem] text-white font-bold py-2 px-4 bg-[#1EA1CF];
+}
+.cards {
+    box-shadow: 1px 1px 5px #a5a1a1;
+    /* @apply  */
+}
+.forms{
+      box-shadow:
+        0 8px 16px inset rgba(0, 0, 0, 0.1),
+        /* main soft shadow */
+        0 4px 8px inset rgba(0, 0, 0, 0.08),
+        /* depth shadow */
+        0 2px 4px inset rgba(0, 0, 0, 0.06);
+}
+
+.forms input {
+
+    @apply w-full py-1 px-2 outline-none;
+}
+
+.rs {
+    @apply rounded-[0.5rem];
+    box-shadow:
+        0 8px 16px inset rgba(0, 0, 0, 0.1),
+        /* main soft shadow */
+        0 4px 8px inset rgba(0, 0, 0, 0.08),
+        /* depth shadow */
+        0 2px 4px inset rgba(0, 0, 0, 0.06);
+}
+/* Register Labour */
+.register{
+    @apply bg-[#fff] text-black gap-1.5 ;
+}
+.register p{
+    @apply font-semibold text-[1rem]  uppercase
+}
+.register input{
+    box-shadow:
+        0 8px 16px inset rgba(0, 0, 0, 0.1),
+        /* main soft shadow */
+        0 4px 8px inset rgba(0, 0, 0, 0.08),
+        /* depth shadow */
+        0 2px 4px inset rgba(0, 0, 0, 0.06);
+    @apply  py-2 px-4 rounded-[0.5rem] outline-none ;
+}
+.register select{
+    @apply text-black py-1 px-2 border-1 border-[#000] rounded-[0.5rem] outline-none transition-all duration-500 ease-in-out
+}
+.register option{
+    @apply text-black  ;
+}
+/*  */
+.conta{
+    overflow-y: scroll;
+}
