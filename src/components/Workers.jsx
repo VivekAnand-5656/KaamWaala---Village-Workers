@@ -36,7 +36,7 @@ function Workers({ regshow, setRegshow, workers, setWorkers }) {
         {
             regshow && (
                 <div className=' w-[100vw] h-[100vh] flex justify-center items-center  bg-[#0afff360] fixed top-0 z-55 ' >
-                    <form onSubmit={handleSubmit} action="" className=' register w-[40%] h-[100%] mx-auto flex flex-col py-1 px-5 rounded-[1rem]  ' >
+                    <form onSubmit={handleSubmit} action="" className=' register sm:w-[40%] w-[100%] sm:h-[100%] h-[100%] mx-auto flex flex-col sm:py-1 sm:px-5 p-2 sm:rounded-[1rem]  ' >
                         <p onClick={() => setRegshow(false)} className=' ml-[90%]  cursor-pointer text-[1rem] '>❌</p>
                         <h1 className='text-[1.2rem] font-bold text-center uppercase ' >Register</h1>
                         <p >Basic Details</p>
@@ -44,11 +44,11 @@ function Workers({ regshow, setRegshow, workers, setWorkers }) {
                             <input
                                 value={formData.name}
                                 onChange={handleChange}
-                                type="text" name='name' placeholder='Full Name' required />
+                                type="text" name='name' placeholder='Full Name' required className='sm:w-auto w-[50%] ' />
                             <input
                                 value={formData.age}
                                 onChange={handleChange}
-                                type="number" name='age' placeholder='Age' required />
+                                type="number" name='age' placeholder='Age' required className='sm:w-auto w-[50%] ' />
                         </div>
                         <select
                             value={formData.gender}

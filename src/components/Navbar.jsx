@@ -82,13 +82,13 @@ function Navbar() {
         {/* ---- Login ---- */}
         {
             show && (
-                <div className='w-[100vw] h-[100vh] fixed z-55 bg-[#11fcec5c] ' >
-                    <form action="submit" className='forms   w-[30%] h-[80vh] flex flex-col justify-center items-center gap-2.5 rounded-[0.5rem] bg-[#fff] shadow-2xl p-3 mt-[15vh] ml-[35%] ' >
-                        <p onClick={() => setShow(false)} className=' ml-[95%] mt-[-90px] cursor-pointer text-[1.5rem] '>❌</p>
+                <div className='w-[100vw] h-[100vh] fixed z-55 bg-[#11fcec5c] flex justify-center items-center ' >
+                    <form action="submit" className='forms   relative  sm:w-[30%] w-[80%] sm:h-[80vh] h-[60%] mx-auto flex flex-col justify-center items-center gap-2.5 rounded-[0.5rem] bg-[#fff] shadow-2xl p-3 sm:mt-[15vh] sm:ml-[35%] ' >
+                        <p onClick={() => setShow(false)} className=' sm:ml-[95%] ml-[95%] sm:mt-[-90px] mt-[-50px] cursor-pointer text-[1.5rem] '>❌</p>
                         <h1 className=' text-[2rem] font-bold  ' >Welcome!</h1>
-                        <div className='rs  w-full flex items-center ' >
+                        <div className='rs flex items-center sm:w-[100%] w-[100%] ' >
                             <i className="fa-solid fa-user text-[1.5rem]  "></i>
-                            <input type="email" name='Email' placeholder='Email id' className=' ' />
+                            <input type="email" name='Email' placeholder='Email id' className='' />
                         </div>
                         <div className='rs w-full flex items-center ' >
                             <input type={pshow ? "text" : "password"} name='Password' placeholder='Enter Password' />
@@ -104,8 +104,8 @@ function Navbar() {
         {/* Signup */}
         {
             sinShow && (
-                <div className='w-[100vw] h-[100vh] fixed z-55 bg-[#11fcec5c] ' >
-                    <form action="submit" className='forms   w-[30%] h-[80vh] flex flex-col justify-center items-center gap-2.5 rounded-[0.5rem] bg-[#fff] shadow-2xl p-3 mt-[15vh] ml-[35%] ' >
+                <div className='w-[100vw] h-[100vh] fixed z-55 bg-[#11fcec5c] flex sm:justify-normal sm:justify-items-normal justify-center items-center ' >
+                    <form action="submit" className='forms   sm:w-[30%] w-[80%]  sm:h-[80vh] h-[70%] flex flex-col justify-center items-center gap-2.5 rounded-[0.5rem] bg-[#fff] shadow-2xl p-3 sm:mt-[15vh] sm:ml-[35%] ' >
                         <p onClick={() => setSinShow(false)} className=' ml-[95%] mt-[-90px] cursor-pointer text-[1.5rem] '>❌</p>
                         <h1 className=' text-[2rem] font-bold  ' >Welcome!</h1>
                         <div className='rs w-full flex items-center' >

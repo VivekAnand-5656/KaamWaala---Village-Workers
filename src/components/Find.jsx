@@ -13,11 +13,11 @@ function Find({ findShow, setFindShow, workers }) {
     return <>
         {
             findShow && (
-                <div className=' w-[100vw] h-[100vh] flex flex-col  bg-[#fff] fixed top-0 z-55 p-2 ' >
-                    <p onClick={() => setFindShow(false)} className=' ml-[95%] mt-[0px] cursor-pointer text-[1.5rem] '>❌</p>
-                    <div className='border border-[#fff] w-full h-[100%] p-2 rounded-[0.5rem] '>
-                        <div className='w-full h-[10%] flex justify-center gap-3 flex-col items-center '>
-                            <h1 className='text-[2rem] font-bold text-center ' >Worker's List</h1>
+                <div className=' w-[100vw] sm:h-[100vh] h-auto flex flex-col  bg-[#fff] fixed top-0 z-55 sm:p-2 ' >
+                    <p onClick={() => setFindShow(false)} className=' sm:ml-[95%] ml-[90%] mt-[0px] cursor-pointer text-[1.5rem] '>❌</p>
+                    <div className=' border-[#fff] w-full h-[100%] sm:p-2 p-0 rounded-[0.5rem] '>
+                        <div className='w-full sm:h-auto flex justify-center sm:gap-3 gap-1.5 flex-col items-center '>
+                            <h1 className='sm:text-[2rem] text-[1.5rem] font-bold text-center ' >Worker's List</h1>
                             <input
                                 type="search"
                                 name="search"
@@ -25,16 +25,16 @@ function Find({ findShow, setFindShow, workers }) {
                                 placeholder='Search Workers'
                                 value={search}
                                 onChange={(e) => setSearch(e.target.value)}
-                                className=' w-[20%] border-2 border-[#1EA1CF] py-2 px-2 rounded-[0.5rem] outline-none transition-all duration-500 ease-in-out hover:w-[30%] '
+                                className=' sm:w-[20%] w-[90%] border-2 border-[#1EA1CF] py-2 px-2 rounded-[0.5rem] outline-none transition-all duration-500 ease-in-out sm:hover:w-[30%] '
                             />
                         </div>
-                        <div className=' conta w-full h-[90%] p-2 flex flex-wrap justify-center items-center gap-2 bg-[#ffffffbe] ' >
+                        <div className=' conta sm:w-full w-[100%] sm:h-[90%] h-auto sm:p-2 p-1.5 flex flex-wrap justify-center items-center sm:gap-2 gap-1.5  bg-[#ffffffbe] ' >
                             {
                                 filteredWorkers.length === 0 ? (
                                     <p>No matching workers found!</p>
                                 ) : (
                                     filteredWorkers.map((worker, index) => (
-                                        <div key={index} className=' w-[20%] h-[300px] bg-[#fff] gap-1 rounded-[0.5rem] shadow-sm flex flex-col justify-center p-3 ' >
+                                        <div key={index} className=' sm:w-[20%] w-[80%] border sm:h-[300px] bg-[#fff] gap-1 rounded-[0.5rem] shadow-sm flex flex-col justify-center p-3 ' >
                                             <h3 className='text-[1.2rem] font-semibold'>{worker.name}</h3>
                                             <p><span className='text-[#1EA1CF] font-semibold'>Age</span> : {worker.age}</p>
                                             <p><span className='text-[#1EA1CF] font-semibold'>Gender</span> : {worker.gender}</p>
