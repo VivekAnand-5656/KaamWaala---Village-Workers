@@ -2,10 +2,9 @@ import React from 'react'
 
 function Features() {
     return <>
-        <div className=' sm:w-[80%] w-[100%] sm:h-[80vh] h-auto mx-auto bg-[#ECF7FB] mt-[100px] rounded-[1.5rem] p-4 flex flex-wrap justify-center items-center gap-2 ' >
+        <div className=' sm:w-[50%] w-[100%] sm:h-auto h-auto mx-auto bg-[#ECF7FB] mt-[100px] rounded-[1.5rem] p-4 flex flex-wrap justify-center items-center gap-2 ' >
             <h1 className='text-[2rem]  text-center font-bold ' >Features</h1>
-            <div className=' top-0  sm:w-[150px] w-[50px] sm:h-[150px] sm:block hidden  mt-[-150px] bg-[#1EA1CF] rounded-[50%]  ' ></div>
-            <div className='w-full flex flex-wrap gap-3 sm:justify-center justify-center '>
+             <div className='w-full flex flex-wrap gap-3 sm:justify-center justify-center '>
                 <div className=' feature '>
                     <h1>Register Labour</h1>
                 </div>
